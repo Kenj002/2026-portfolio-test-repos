@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Kenji Patiño</title>
+    <link rel="stylesheet" href="css/achievements.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">KP</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="eduBackground.html">Education</a></li>
+                <li><a href="achievements.html" class="active">Achievements</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Achievements</h1>
+        <div class="achievements-list">
+            <div class="achievement-item" id="achievementCard">
+                <div class="achievement-header">
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-content">
+                        <h2>My Achievements</h2>
+                        <p class="date">2022 - Present</p>
+                    </div>
+                    <div class="expand-icon">▼</div>
+                </div>
+                <div class="achievement-details" id="achievementDetails">
+                    <div class="details-content">
+                        <div class="achievement-section">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/intern exellence award.jpg" alt="Intern Excellence Award">
+                            </div>
+                            <div class="achievement-info">
+                                <h4>🏆 Intern Excellence Award</h4>
+                                <p class="description">Recognized for outstanding performance and dedication during the internship program. This award acknowledges exceptional contributions, professional growth, and commitment to excellence in Computer Engineering Technology.</p>
+                                <p class="description"><strong>Key Highlights:</strong></p>
+                                <ul>
+                                    <li>Demonstrated exceptional technical skills and problem-solving abilities</li>
+                                    <li>Showed strong initiative and willingness to learn</li>
+                                    <li>Maintained high standards of work quality and professionalism</li>
+                                    <li>Contributed positively to team projects and collaborations</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="achievement-section">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/perfect att. achievement.jpg" alt="Perfect Attendance Achievement">
+                            </div>
+                            <div class="achievement-info">
+                                <h4>⭐ Perfect Attendance Achievement</h4>
+                                <p class="description">Achieved perfect attendance record, demonstrating reliability, commitment, and dedication to academic and professional responsibilities. This achievement reflects strong work ethic and time management skills.</p>
+                                <p class="description"><strong>Key Highlights:</strong></p>
+                                <ul>
+                                    <li>Maintained 100% attendance throughout the academic period</li>
+                                    <li>Demonstrated reliability and punctuality</li>
+                                    <li>Showed commitment to continuous learning and development</li>
+                                    <li>Exhibited strong time management and organizational skills</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const achievementCard = document.getElementById('achievementCard');
+        const achievementDetails = document.getElementById('achievementDetails');
+        const expandIcon = achievementCard.querySelector('.expand-icon');
+
+        achievementCard.addEventListener('click', function() {
+            achievementCard.classList.toggle('expanded');
+            
+            if (achievementCard.classList.contains('expanded')) {
+                expandIcon.textContent = '▲';
+            } else {
+                expandIcon.textContent = '▼';
+            }
+        });
+    </script>
+</body>
+</html>
